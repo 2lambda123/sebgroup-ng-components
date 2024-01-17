@@ -22,7 +22,7 @@ $gray-600: #868686 !default;
     table {
         border-collapse: separate !important; /* Don't collapse */
         border-spacing: 0 !important;
-    
+
         thead > tr > th {
             border-bottom: 2px solid $gray-200 !important;
             background: $main-background;
@@ -33,7 +33,7 @@ $gray-600: #868686 !default;
                 &:first-child > td {
                     border-top: none;
                 }
-            } 
+            }
         }
     }
 }

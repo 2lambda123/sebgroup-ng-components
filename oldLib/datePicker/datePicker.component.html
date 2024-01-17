@@ -1,11 +1,11 @@
 <div class="form-group date-picker">
     <div class="input-group" [class.has-error]="error" [ngClass]="className">
         <label *ngIf="label" for={{name}}>{{label}}</label>
-        <input 
+        <input
             name="{{name}}"
-            class="form-control input-box" 
+            class="form-control input-box"
             [placeholder]="placeHolder"
-            name="dp" 
+            name="dp"
             [(ngModel)]="value"
             [readonly]="readOnly"
             [minDate]="minDate"
@@ -14,9 +14,9 @@
             ngbDatepicker
             #picker="ngbDatepicker">
         <div class="input-group-append">
-            <button 
-                class="btn btn-outline-secondary calander-icon" 
-                (click)="picker.toggle()" 
+            <button
+                class="btn btn-outline-secondary calander-icon"
+                (click)="picker.toggle()"
                 type="button"
                 [innerHtml]="icon | safeHtml">
             </button>

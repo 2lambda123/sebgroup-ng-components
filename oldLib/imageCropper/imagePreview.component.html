@@ -22,14 +22,14 @@
         </svg>
 
     </div>
-    <input 
-        #fileInput 
-        type="file" 
-        id="fileInput" 
-        name="profileImage" 
+    <input
+        #fileInput
+        type="file"
+        id="fileInput"
+        name="profileImage"
         accept="image/*"
         (click)="fileInputClick($event)"
-        (change)="handleUploadImage && handleUploadImage($event)" 
+        (change)="handleUploadImage && handleUploadImage($event)"
     />
     <button type="button" class="btn btn-primary custom-button" (click)="onFileInputClick($event)">
         <span>

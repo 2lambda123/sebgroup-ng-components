@@ -30,7 +30,7 @@
                     <span class="sr-only">{{nextText}}</span>
                 </button>
             </li>
-    
+
             <li *ngIf="value !== size && useFirstAndLast" class="page-item" [class.disabled]="value === size" (click)="handleChange(size)">
                 <button class="page-link" title="{{lastText}}">
                     <span *ngIf="useTextNav">{{lastText}}</span>
@@ -39,7 +39,7 @@
                 </button>
             </li>
         </ul>
-    
+
         <ul *ngIf="useDotNav" class="pagination dotnav">
             <li
                 *ngFor="let number of getList(value, size, size)"

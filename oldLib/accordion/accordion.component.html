@@ -4,13 +4,13 @@
         *ngFor="let item of list; let i = index"
         tabindex="0"
         [id]="randomIds[i]"
-        (keydown)="onKeyDown(i, $event)" 
+        (keydown)="onKeyDown(i, $event)"
         [attr.aria-expanded]="active === i"
         attr.aria-controls="lbl-{{randomIds[i]}}"
         role="button"
         [class.active]="active === i">
         <div
-            class="header-wrapper" 
+            class="header-wrapper"
             (click)="this.toggle(i)"
         >
             <div [innerHtml]="angleRightIcon | safeHtml"></div>
