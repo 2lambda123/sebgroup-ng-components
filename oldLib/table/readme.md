@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: Table Component
 Module: "TableModule"
@@ -7,36 +8,37 @@ Import: "seb-angular-components/table"
 Type: UI Component
 ```
 
-## Element Information 
+## Element Information
+
 This Angular component is based on SEB Bootstrap style. Supports customization and configurations. The module name of this component is `TableModule` and the selector is `ac-table`.
 
 ## Basic use
+
 ```html
-<ac-table
-    [headerList]="headerList"
-    [rows]="rows"
-    [rowClickedAction]="handleClickRow"
-    [sortClickedAction]="handleSortRow"
->
-</ac-table>      
+<ac-table [headerList]="headerList" [rows]="rows" [rowClickedAction]="handleClickRow" [sortClickedAction]="handleSortRow"> </ac-table>
 ```
-<sup>*Please note* the callback functions you pass to **rowClickedAction** and **sortClickedAction** need to be arrow functions or you need to bind them to `this`</sup>
+
+<sup>_Please note_ the callback functions you pass to **rowClickedAction** and **sortClickedAction** need to be arrow functions or you need to bind them to `this`</sup>
 
 ## Properties
+
 These are the current available properties:
 
-| Property           | Type                                                 | Description                                                           | Default Value  |
-| ------------------ | ---------------------------------------------------- | --------------------------------------------------------------------- | -------------- |
-| headerList         | `Array<TableHeaderListItem>` <sup>1</sup>            | List of Header Items                                                  | `[]`           |
-| rows               | `Array<any>`                                         | An Array of any objects                                               | `[]`           |
-| rowClickedAction?  | `(value: TableRowClickedEvent) => void` <sup>2</sup> | An event emmiter which will fire up when a row is clicked             | -              |
-| sortClickedAction? | `(value: SortInfo) => void` <sup>3</sup>             | An event emmiter which will fire up when a column sort is clicked     | -              |
-| fixedHeight?       | `string`                                             | An optional custom fixed height value                                 | -              |
-| className?         | `string`                                             | Custom class can be passed here                                       | -              |
+| Property           | Type                                                 | Description                                                       | Default Value |
+| ------------------ | ---------------------------------------------------- | ----------------------------------------------------------------- | ------------- |
+| headerList         | `Array<TableHeaderListItem>` <sup>1</sup>            | List of Header Items                                              | `[]`          |
+| rows               | `Array<any>`                                         | An Array of any objects                                           | `[]`          |
+| rowClickedAction?  | `(value: TableRowClickedEvent) => void` <sup>2</sup> | An event emmiter which will fire up when a row is clicked         | -             |
+| sortClickedAction? | `(value: SortInfo) => void` <sup>3</sup>             | An event emmiter which will fire up when a column sort is clicked | -             |
+| fixedHeight?       | `string`                                             | An optional custom fixed height value                             | -             |
+| className?         | `string`                                             | Custom class can be passed here                                   | -             |
 
 ## Footnote
+
 `table` has an exported interface named
+
 1. `TableHeaderListItem`
+
 ```javascript
 {
     /** The label displayed */
@@ -51,7 +53,9 @@ These are the current available properties:
     active: boolean;
 }
 ```
+
 2. `TableRowClickedEvent`
+
 ```javascript
 {
     /** The object which was clicked */
@@ -60,7 +64,9 @@ These are the current available properties:
     index: number;
 }
 ```
+
 3. `SortInfo`
+
 ```javascript
 {
     /** column name */

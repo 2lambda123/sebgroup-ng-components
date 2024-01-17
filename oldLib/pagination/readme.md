@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: Pagination Component
 Module: "PaginationModule"
@@ -7,20 +8,18 @@ Import: "seb-angular-components/pagination"
 Type: UI Component
 ```
 
-## Element Information 
+## Element Information
+
 This Angular component is based on SEB Bootstrap style. Supports customization and configurations. The module name of this component is `PaginationModule` and the selector is `ac-pagination`.
 
 ## Basic use
+
 ```html
-<ac-pagination
-      [value]="currentPageObj"
-      [size]="20"
-      [offset]="5"
-      [changeAction]="callbackMethod">
-</ac-pagination>      
+<ac-pagination [value]="currentPageObj" [size]="20" [offset]="5" [changeAction]="callbackMethod"> </ac-pagination>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property         | Type                      | Descrition                                               |
@@ -39,4 +38,5 @@ These are the current available properties:
 | className?       | `string`                  | Custom class can be passed here                          |
 
 ## Footnote
+
 1. Dot navigation does not support `offset`, it is not meant to have big size navigation. For that, use the normal numbered navigation.

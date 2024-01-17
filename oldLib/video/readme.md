@@ -1,5 +1,5 @@
-
 ## Element name
+
 ```javascript
 Name: Video Holder Component
 Module: "VideoModule"
@@ -8,22 +8,18 @@ Import: "seb-angular-components/video"
 Type: Other Component
 ```
 
-## Element information 
+## Element information
+
 This Angular component supports customization and configurations. The component name is `VideoModule` and the selector is `ac-video`.
 
 ## Basic use
+
 ```html
-<ac-video
-    name="myYoutubeVideo"
-    [src]="youtubeVideoSrc"
-    width="535px"
-    height="300px"
-    sourceType="stream"
-    [showControls]="true"
-></ac-video>
+<ac-video name="myYoutubeVideo" [src]="youtubeVideoSrc" width="535px" height="300px" sourceType="stream" [showControls]="true"></ac-video>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property         | Type      | Descrition                                                    |
@@ -39,13 +35,15 @@ These are the current available properties:
 | showControls?    | `boolean` | show controls (default: `false`)                              |
 | showInfo?        | `boolean` | show video information (`stream` only) (default: `false`)     |
 | allowFullScreen? | `boolean` | allow toggling full screen (default: `false`)                 |
-| _id?        | `string`  | The id property of the video                                  |
+| \_id?            | `string`  | The id property of the video                                  |
 
 ## Footnote
+
 1. Video source is obtained either:
-      * `Local`: use `require()` method to require the video into your source code and use the returned string as `src`.
-      * `Stream`: grab only the url from the **embed** sharing option and use it as `src`.
+    - `Local`: use `require()` method to require the video into your source code and use the returned string as `src`.
+    - `Stream`: grab only the url from the **embed** sharing option and use it as `src`.
 
 ## References
+
 1. YouTube&trade; embedded video [APIs](https://developers.google.com/youtube/player_parameters)
 2. Vimeo&trade; embedded video [APIs](https://help.vimeo.com/hc/en-us/articles/224972808-Customizing-the-embedded-player)

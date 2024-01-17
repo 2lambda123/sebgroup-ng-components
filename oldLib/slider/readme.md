@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: Slider Component
 Module: "SliderModule"
@@ -7,20 +8,18 @@ Import: "seb-angular-components/slider"
 Type: Form Component
 ```
 
-## Element Information 
+## Element Information
+
 This Angular component supports customization and configurations. The module name of this component is `SliderModule` and the selector is `ac-slider`.
 
 ## Basic use
+
 ```html
-<ac-slider
-      [(ngModel)]="sliderObj"
-      [min]="0"
-      [max]="100"
-      [step]="5">
-</ac-slider>      
+<ac-slider [(ngModel)]="sliderObj" [min]="0" [max]="100" [step]="5"> </ac-slider>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property           | Type                                  | Descrition                                                          |
@@ -38,14 +37,17 @@ These are the current available properties:
 | theme?             | `string`                              | Based on SEB predefined colors. (default: `'primary'`)<sup>2</sup>  |
 | tooltipTheme?      | `string`                              | Based on SEB predefined colors. (default: `'inverted'`)<sup>2</sup> |
 | alternative?       | `boolean`                             | Use an alternative version of the slider                            |
-| _id?          | `string`                              | id property of the rang object or slider                            |
+| \_id?              | `string`                              | id property of the rang object or slider                            |
 
 ## footnote
+
 1. `labels` has an imported interface named `RangeSliderLabel`:
+
 ```typescript
 {
-      position: number;
-      text: string;
+    position: number;
+    text: string;
 }
 ```
+
 2. Supported themes: `primary`, `inverted`, `success`, `danger`, `warning`, `purple`

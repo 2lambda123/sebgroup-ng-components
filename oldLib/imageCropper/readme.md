@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: ImageCropper Component
 Module: "ImageCropperModule"
@@ -7,28 +8,21 @@ Import: "seb-angular-components/imageCropper"
 Type: Form Component
 ```
 
-## Element information 
+## Element information
+
 This Angular module is based on [cropperjs](https://github.com/fengyuanchen/cropperjs), Supports customization and configuration options, [see](https://github.com/fengyuanchen/cropperjs#options). The module name is `ImageCropperModule` and the selector is `ac-image-cropper`.
 
 ## Basic use
-```html
-let cropperConfigs: {
-    preview: ".image-preview",
-    guides: false,
-    checkCrossOrigin: false,
-    responsive: true,
-    zoomable: false,
-    aspectRatio: (1 / 1),
-    rotatable: false,
-}
 
- <ac-image-cropper 
-    [cropperConfigs]="cropperConfigs"
-    [onCrop]="onCrop">
-</ac-image-cropper>
+```html
+let cropperConfigs: { preview: ".image-preview", guides: false, checkCrossOrigin: false, responsive: true, zoomable: false, aspectRatio: (1
+/ 1), rotatable: false, }
+
+<ac-image-cropper [cropperConfigs]="cropperConfigs" [onCrop]="onCrop"> </ac-image-cropper>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property               | Type                                      | Descrition                                                                                                                                                                 |
@@ -49,7 +43,7 @@ These are the current available properties:
 | imageCropperClassName? | `string`                                  | custom class for cropper UI                                                                                                                                                |
 | alt?                   | `string`                                  | image `alt`                                                                                                                                                                |
 | crossOrigin?           | `string`                                  | `crossOrigin` is part of the image tag options that handle CORS. [see](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image)                               |
-| rotateTo?              | `number`                                  | `rotateTo`           is part of cropperjs options [see](https://github.com/fengyuanchen/cropperjs#options)                                                                 |
+| rotateTo?              | `number`                                  | `rotateTo` is part of cropperjs options [see](https://github.com/fengyuanchen/cropperjs#options)                                                                           |
 | enable                 | `boolean`                                 | `scaleX` is part of cropperjs options [see](https://github.com/fengyuanchen/cropperjs#options)                                                                             |
 | scaleX?                | `number`                                  | `scaleX` is part of cropperjs options [see](https://github.com/fengyuanchen/cropperjs#options)                                                                             |
 | scaleY?                | `number`                                  | `scaleY` is part of cropperjs options [see](https://github.com/fengyuanchen/cropperjs#options)                                                                             |
@@ -60,8 +54,10 @@ These are the current available properties:
 | canvasData?            | `CanvasData`                              | interface `canvasData` is available within the dist folder , `canvasData` is part of cropperjs options [see](https://github.com/fengyuanchen/cropperjs#options)            |
 
 ## Reference
+
 This Angular module is based on [cropperjs](https://github.com/fengyuanchen/cropperjs).
 
 ## Footnote
-1. The props from the property above is the cropperjs options object. cropperjs support set of properties namely, `drapMode`, `initialMode` , `aspectRation` etc. These and many more options are described in the cropperjs documentation [here](https://github.com/fengyuanchen/cropperjs#options). 
-`toggle` is an optional field. However, you need to pass toggle to be able to control the modal from your component.
+
+1. The props from the property above is the cropperjs options object. cropperjs support set of properties namely, `drapMode`, `initialMode` , `aspectRation` etc. These and many more options are described in the cropperjs documentation [here](https://github.com/fengyuanchen/cropperjs#options).
+   `toggle` is an optional field. However, you need to pass toggle to be able to control the modal from your component.

@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: Step Tracker Component
 Module: "StepTrackerModule"
@@ -7,18 +8,18 @@ Import: "seb-angular-components/stepTracker"
 Type: UI Component
 ```
 
-## Element Information 
+## Element Information
+
 This Angular component supports customization and configurations. The module name of this component is `StepTrackerModule` and the selector is `ac-step-tracker`.
 
 ## Basic use
+
 ```html
-<ac-step-tracker
-      [step]="valueObj"
-      [list]="stepTrackerListObj">
-</ac-step-tracker>
+<ac-step-tracker [step]="valueObj" [list]="stepTrackerListObj"> </ac-step-tracker>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property       | Type                      | Descrition                                                                             |
@@ -32,4 +33,5 @@ These are the current available properties:
 | className?     | `string`                  | Custom class can be passed here                                                        |
 
 ## Footnote
+
 1. Label positions supported `top` and `bottom` for `horizontal` orientation, `left` and `right` for `vertical` orientation.

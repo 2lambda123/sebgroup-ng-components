@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: TextBoxGroup Component
 Module: "TextBoxGroupModule"
@@ -7,19 +8,18 @@ Import: "seb-angular-components/textBoxGroup"
 Type: Form Component
 ```
 
-## Element information 
+## Element information
+
 This Angular component is based on SEB Bootstrap style. Supports customization and configurations. The component name is `TextBoxGroup` and the selector is `ac-textbox-group`.
 
 ## Basic use
+
 ```html
-<ac-textbox-group
-    name="textInput"
-    placeholder="Text Box placeholder"
-    [(ngModel)]="elementValue">
-</ac-textbox-group>
+<ac-textbox-group name="textInput" placeholder="Text Box placeholder" [(ngModel)]="elementValue"> </ac-textbox-group>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property      | Type                          | Descrition                                      |
@@ -42,17 +42,16 @@ These are the current available properties:
 | rightIcon?    | `string`                      | Right icon as SVG string                        |
 | onLeftClick?  | `(event: MouseEvent) => void` | Click event on Left icon                        |
 | onRightClick? | `(event: MouseEvent) => void` | Click event on Right icon                       |
-| _id?     | `string`                      | The id property of the textbox                  |
+| \_id?         | `string`                      | The id property of the textbox                  |
 
 ## Inner Element Reference
+
 The inner element can be selected using Angular's [Template reference variable (#var)](https://angular.io/guide/template-syntax#ref-vars), [@ViewChild](https://angular.io/api/core/ViewChild) and [AfterViewInit](https://angular.io/api/core/AfterViewInit). Example:
+
 ```html
-<ac-textbox-group
-      #myTextbox
-      [(ngModel)]="elementValue"
-      name="textInput">
-</ac-textbox-group>
+<ac-textbox-group #myTextbox [(ngModel)]="elementValue" name="textInput"> </ac-textbox-group>
 ```
+
 ```javascript
 @ViewChild("myTextbox") myTextbox: TextBoxComponent;
 
@@ -60,4 +59,5 @@ ngAfterViewInit() {
       myTextbox.innerElement.nativeElement.focus();
 }
 ```
+
 <sup>**Important**: Using inner element reference should be avoided unless it is necessary and should not be used to manipulate the DOM element. An example usage is to programmatically trigger a focus on the inner element.</sup>

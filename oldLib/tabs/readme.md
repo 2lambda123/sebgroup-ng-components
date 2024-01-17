@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: Tabs Component
 Module: "TabsModule"
@@ -7,19 +8,18 @@ Import: "seb-angular-components/tabs"
 Type: Form Component
 ```
 
-## Element Information 
+## Element Information
+
 This Angular component is based on SEB Bootstrap style. Supports customization and configurations. The module name of this component is `TabsModule` and the selector is `ac-tabs`.
 
 ## Basic use
+
 ```html
-<ac-tabs
-      [list]="tabsList"
-      [activeTab]="index"
-      [clickAction]="clickHandler">
-</ac-tabs>      
+<ac-tabs [list]="tabsList" [activeTab]="index" [clickAction]="clickHandler"> </ac-tabs>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property     | Type                              | Descrition                                             |
@@ -30,7 +30,9 @@ These are the current available properties:
 | className?   | `string`                          | Custom class can be passed here                        |
 
 ## Footnote
+
 1. `list` has an exported interface named `TabsListItem`
+
 ```javascript
 {
     text: string;

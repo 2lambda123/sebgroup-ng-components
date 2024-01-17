@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: Toggle Component
 Module: "ToggleModule"
@@ -7,18 +8,18 @@ Import: "seb-angular-components/toggle"
 Type: Form Component
 ```
 
-## Element Information 
+## Element Information
+
 This Angular component supports customization and configurations. The module name of this component is `ToggleModule` and the selector is `ac-toggle`.
 
 ## Basic use
+
 ```html
-<ac-toggle
-      [(ngModel)]="toggleObj"
-      name="myToggle">
-</ac-toggle>      
+<ac-toggle [(ngModel)]="toggleObj" name="myToggle"> </ac-toggle>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property    | Type     | Descrition                      |
@@ -27,4 +28,4 @@ These are the current available properties:
 | name        | `string` | Element name                    |
 | label?      | `string` | Element label                   |
 | className?  | `string` | Custom class can be passed here |
-| _id?   | `string` | The toggle id property          |
+| \_id?       | `string` | The toggle id property          |

@@ -1,5 +1,5 @@
-
 ## Element name
+
 ```javascript
 Name: Confirm Popup Component
 Component: "DialogueModule"
@@ -8,10 +8,12 @@ Import: "seb-angular-components/dialogue"
 Type: Other Component
 ```
 
-## Element information 
+## Element information
+
 This Angular component is based on SEB Bootstrap style. Supports customization and configurations. The component name is `DialogueModule` and the selector is `ac-dialogue`.
 
 ## Basic use
+
 ```html
 <ac-dialogue
     header="Are you sure?"
@@ -23,6 +25,7 @@ This Angular component is based on SEB Bootstrap style. Supports customization a
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property         | Type         | Descrition                                         |

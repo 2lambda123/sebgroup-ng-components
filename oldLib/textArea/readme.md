@@ -1,4 +1,5 @@
 ## Element name
+
 ```javascript
 Name: Text Area Component
 Module: "TextAreaModule"
@@ -7,20 +8,18 @@ Import: "seb-angular-components/textArea"
 Type: Form Component
 ```
 
-## Element Information 
+## Element Information
+
 This Angular component is based on SEB Bootstrap style. Supports customization and configurations. The module name of this component is `TextAreaModule` and the selector is `ac-textarea`.
 
 ## Basic use
+
 ```html
-<ac-textarea
-      [(ngModel)]="textareaObj"
-      name="myTextArea"
-      [cols]="5"
-      [rows]="10">
-</ac-textarea>      
+<ac-textarea [(ngModel)]="textareaObj" name="myTextArea" [cols]="5" [rows]="10"> </ac-textarea>
 ```
 
 ## Properties
+
 These are the current available properties:
 
 | Property     | Type      | Descrition                       |
