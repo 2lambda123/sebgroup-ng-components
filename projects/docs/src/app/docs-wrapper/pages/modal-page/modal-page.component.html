@@ -25,9 +25,7 @@
             </div>
 
             <div class="custom-footer" footer>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="this.toggle = false">
-                    Close
-                </button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="this.toggle = false">Close</button>
             </div>
         </sebng-modal>
     </ng-container>
@@ -35,7 +33,7 @@
     <ng-container code>{{ snippet }}</ng-container>
 
     <ng-container controls>
-        <app-dynamic-form [extendedFormGroup]="extendedFormGroup"></app-dynamic-form>
+        <app-dynamic-form [extendedFormGroup]="extendedFormGroup" [activeStep]="0"></app-dynamic-form>
     </ng-container>
 
     <ng-container notes>

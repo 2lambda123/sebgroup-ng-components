@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
-import { ExtendedFormGroup } from "../../../common/dynamic-form/model/custom-classes/extended-form-group";
-import { FormService } from "../../../common/dynamic-form/form.service";
+import { ExtendedFormGroup } from "@sebgroup/ng-components/dynamic-form/model/custom-classes/extended-form-group";
+import { DynamicFormSection, FormService } from "@sebgroup/ng-components/dynamic-form";
 import { RangeSliderLabel, SliderTheme } from "@sebgroup/ng-components/slider";
-import { DynamicFormOption } from "../../../common/dynamic-form/model/models";
+import { DynamicFormOption } from "@sebgroup/ng-components/dynamic-form/";
 
 @Component({
     selector: "app-slider-page",
@@ -35,7 +35,7 @@ import { DynamicFormOption } from "../../../common/dynamic-form/model/models";
 
                 <label>Step</label>
                 <sebng-stepper [min]="0" [max]="100" [(ngModel)]="step"></sebng-stepper>
-                <app-dynamic-form [extendedFormGroup]="extendedFormGroup"></app-dynamic-form>
+                <app-dynamic-form [extendedFormGroup]="extendedFormGroup" [activeStep]="0"></app-dynamic-form>
             </ng-container>
             <ng-container code>{{ snippet }}</ng-container>
         </app-doc-page>
@@ -122,6 +122,6 @@ export class SliderPageComponent {
                     },
                 ],
             },
-        ]);
+        ] as DynamicFormSection[]);
     }
 }
